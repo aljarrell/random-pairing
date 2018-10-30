@@ -5,6 +5,8 @@ def random_pair(names)
     puts "item: #{item}"
     if item.length == 2
       arr << item
+    else
+      arr[rand(arr.length)].concat(item)
     end
   end
   puts "array: #{arr}"

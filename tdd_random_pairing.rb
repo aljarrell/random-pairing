@@ -17,4 +17,9 @@ class My_test < Minitest::Test
     assert_equal(2, pair.count)
   end
 
+  def test_for_odd_number_of_names
+    pair = random_pair(["Alan", "Jack", "Jeremy"])
+    assert_equal(1, pair.count)
+  end
+
 end
