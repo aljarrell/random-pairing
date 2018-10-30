@@ -7,4 +7,8 @@ class My_test < Minitest::Test
     assert_equal(1,1)
   end
 
-end 
+  def test_for_one_pair
+      assert_equal(1, random_pair())
+  end
+
+end
