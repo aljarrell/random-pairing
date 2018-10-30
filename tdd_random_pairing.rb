@@ -8,7 +8,8 @@ class My_test < Minitest::Test
   end
 
   def test_for_one_pair
-      assert_equal(1, random_pair())
+    pair = random_pair(["Alan", "Jack"])
+      assert_equal(1, pair.count)
   end
 
 end
