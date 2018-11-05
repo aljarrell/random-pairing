@@ -22,4 +22,11 @@ class My_test < Minitest::Test
     assert_equal(1, pair.count)
   end
 
+  def test_for_more_names
+    pair = random_pair(["Alan", "Jack", "Jeremy", "Marv", "BillyJack", "Dogs", "Cats"])
+    assert_equal(3, pair.count)
+  end
+
+
+
 end
